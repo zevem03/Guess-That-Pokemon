@@ -250,15 +250,12 @@ function capitalize(str) {
 window.addEventListener("DOMContentLoaded", initGame);
 
 function resetGame() {
+
     score = 0;
-    document.getElementById("score").textContent = score;
+    updateScore();
+    
 
-    timeLeft = 12;
-    document.getElementById("timer").textContent = timeLeft;
-
-    getRandomPokemon();   // your function that picks a new Pokémon
-
-    startTimer();        // restart countdown
+    loadNewPokemon();
 }
 
 window.onload = () => {
