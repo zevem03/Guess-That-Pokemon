@@ -51,7 +51,7 @@ h1, h2 {
 ================================ */
 .score, .timer {
     position: fixed;
-    right: 25px;
+    left: 25px;
     padding: 10px 18px;
     font-size: 18px;
     background: white;
